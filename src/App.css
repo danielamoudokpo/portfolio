@@ -1,38 +1,284 @@
-.App {
-  text-align: center;
+
+.banner-layer {
+  background: url(./assets/blog.jpg);
+  /* background: rgba(0, 0, 0, 0.5); */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.landing-section {
+  min-height: 765px;
+  /* height: 100vh; */
+  /* background-color: skyblue; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+.projects-section {
+  /* height: 100vh; */
+  min-height: 765px;
+  /* background-color: lightgray; */
+  background: #191919;
+
+
+}
+
+
+.tabs{
+  background-color: red;
+  margin-top: 100;
+}
+
+.contact-section {
+  /* height: 100vh; */
+  min-height: 765px;
+
+  background-color: silver;
+}
+
+.hobby-section {
+  /* height: 100vh; */
+  min-height: 765px;
+
+  background-color: yellowgreen;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px; 
+  margin: 30px auto; 
+  float: none;
+  margin-bottom: 40px; 
+  cursor: pointer;
+}
+
+/* @media screen and (min-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 100%;
+  }
+} */
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+} */
+
+.aboutme-section {
+  /* height: 100vh; */
+  min-height: 765px;
+  /* background: rgba(0, 0, 0, 0.5); */
+  /* background-color: lightgray; */
+  background: rgba(255, 255, 248);
+
+
+  /* background-color: lightgr  ay; */
+}
+
+.leftside, .rigthside{
+  /* height: 100vh; */
+  min-height: 365px;
+  /* width: 100%; */
+
+}
+/* @media screen and (max-width: 1170px){
+  .leftside, .rigthside {
+    height: 50vh;
+  }
+  .f {
+    height: 100%;
+    width: 100%;
+  }
+} */
+@media screen and (min-width: 350px){
+  .leftside, .rigthside {
+    /* height: 100vh; */
+    min-height: 365px;
+
+  }
+  .img{
+    /* height: 100%; */
+    width: 100%;
+    height:100%;
+    z-index: -999;
+
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .leftside{
+  background-color: red;
+}
+.rigthside{
+  background-color:lightgray;
+} */
+
+
+.row {
+  /* display: -ms-flexbox; 
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap; */
+  padding: 0 15px;
+  
+}
+/* .row {margin: 0 -5px;} */
+
+/* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+h3.heading {
+  font-size: 35px;
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 5px;
+  position: relative;
+}
+h3.heading:after {
+  position: absolute;
+  content: '';
+  width: 10%;
+  height: 3px;
+  background: #333;
+  left: 45%;
+  bottom: -18%;
+}
+/* .wrapper {
+  min-height: 100vh;
+  background-color: green;
+} */
+
+.sides{
+  padding-top: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+/*-- to-top --*/
+#toTop {
+	  display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 40px;
+    right: 2%; 
+    overflow: hidden;
+    z-index: 999;
+    width: 36px;
+    height: 36px;
+    border: none;
+    text-indent: 100%;
+    border: 2px solid #191919;
+    background: #191919 url(./assets/tt.png) no-repeat 0px 0px;
+    border-radius: 50%;
+}
+#toTopHover {
+	width: 40px;
+	height: 40px;
+	display: block;
+	overflow: hidden;
+	float: right;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+}
+/*-- //to-top --*/
+
+.column .w3_agile_gallery_effect{
+	position: relative;
+}
+.w3_agile_gallery_effect  {
+    width: 100%;
+}
+.sld{
+  cursor: pointer; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.colo{
+  list-style:none;
 }
+
+
+/*--  contact --*/
+.contact-grids {
+  margin-top: 5em;
+}
+.contact-grids h4 {
+  text-transform: capitalize;
+  color: #333;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.contact-left h5 {
+  text-transform: capitalize;
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.contact-left p,.contact-left p a {
+  margin: 0;
+  line-height: 28px;
+  letter-spacing: .5px;
+  font-size: 15px;
+  color: #666;
+}
+.contact-left p a:hover {
+  color: #000;
+}
+.icon i {
+  font-size: 20px;
+  color: #333;
+}
+.contact-right input[type="text"], .contact-right input[type="email"], .contact-right textarea {
+  outline: none;
+  width: 83%;
+  padding: .9em 1em;
+   font-size: 15px;
+  letter-spacing: 1px;
+  color: #888;
+  border: none;
+  border: 1px solid #777;
+  background: none;
+  margin-bottom: 1.5em;
+border-radius: 10px;
+}
+.contact-right input[type="submit"] {
+  padding: 11px 35px;
+  color: #fff;
+  background: #222;
+border: 2px solid #222;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-radius: 35px;
+  float: right;
+}
+.contact-right input[type="submit"]:hover {
+  color: #222;
+  background: none;
+border: 2px solid #222;
+}
+label {
+  width: 17%;
+  float: left;
+  color: #333;
+  font-weight: 600;
+}
+.contact-right textarea {
+  min-height: 120px;
+  resize: none;
+}
+/*-- // contact --*/
+
+
+
+
