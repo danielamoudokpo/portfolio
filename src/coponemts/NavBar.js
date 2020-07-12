@@ -62,7 +62,7 @@ class NavBar extends Component{
                     </Link>
                  </Nav.Link>
 
-                 <Nav.Link className= 'text-white' href="features"> 
+                 <Nav.Link className= 'text-whit' href="features"> 
                     <Link
                     activeClass = "active"
                     to= "Contact-Section"

@@ -53,19 +53,19 @@ class Contact extends Component{
 
                         <div className='col-lg-7 mt-lg-0 mt-5 contact-rigth'>
                             <h4 className="mb-4 "> Get In Touch</h4>
-                            
+
                             <form action="#" method="post">
                                 <label><i className="fa mr-2 fa-user" aria-hidden="true"></i> Name</label>
-                                <input type="text" name="Name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required=""/>
+                                <input type="text" name="Name"  required="" placeholder='name'/>
                                 <div className="clearfix"></div>
                                 <label><i className="fas mr-2 fa-envelope-open" aria-hidden="true"></i>Email</label>
-                                <input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required=""/>
+                                <input type="email" name="Email" placeholder='name' required=""/>
                                 <div className="clearfix"></div>
                                 <label><i className="fas mr-2 fa-phone" aria-hidden="true"></i>Phone</label>
-                                <input type="text" name="Phone" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" required=""/>
+                                <input type="text" name="Phone" placeholder='text'  required=""/>
                                 <div className="clearfix"></div>
                                 <label><i className="fas mr-2 fa-edit" aria-hidden="true"></i>Message</label>
-                                <textarea name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+                                <textarea name="Message" placeholder='Message....' required=""/>
                                 <input type="submit" value="Submit"/>
 				            </form>
                             
