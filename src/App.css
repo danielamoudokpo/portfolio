@@ -39,7 +39,7 @@
 
 
 .landing-section {
-  min-height: 765px;
+  min-height: 665px;
   /* height: 100vh; */
   /* background-color: skyblue; */
 }
@@ -64,7 +64,7 @@
 
 .hobby-section {
   /* height: 100vh; */
-  min-height: 765px;
+  min-height: 665px;
 
   /* background-color: #fff; */
 
@@ -276,7 +276,7 @@ h3.heading1 {
 
 .contact-section {
   /* height: 100vh; */
-  min-height: 765px;
+  min-height: 665px;
   /* background-color: #fff; */
 
   background-color: silver;

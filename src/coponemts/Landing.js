@@ -32,8 +32,8 @@ class Landing extends Component {
 			        </div>
                     <div className="col-md-5">
 
-                            <a href='https://github.com/danielamoudokpo'> <img src={gitLogo} alt="" class=" image_margin img-fluid"/> </a>   
-                            <a href='https://www.linkedin.com/in/daniel-kokou-amoudokpo/'> <img src={likLogo} alt="" class=" image_margin img-fluid lk"/></a>
+                            <a href='https://github.com/danielamoudokpo' target="_top"> <img src={gitLogo} alt="" class=" image_margin img-fluid"/> </a>   
+                            <a href='https://www.linkedin.com/in/daniel-kokou-amoudokpo/' target="_top"> <img src={likLogo} alt="" class=" image_margin img-fluid lk"/></a>
 
                         </div>
 

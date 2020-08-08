@@ -78,7 +78,7 @@ class Projects extends Component {
                                         alt="Service de mise en relation pour louer des studios d'enregistrement."
                                         />
                                 <h5> Realisé avec: <p>React_Laravel</p> </h5>
-                                <a href='https://gitlab.com/e-studio1'><button className='btn btn-primary'> Lien GitHub </button></a>
+                                <a href='https://gitlab.com/e-studio1' target="_top"><button className='btn btn-primary'> Lien GitHub </button></a>
                             {/* </div> */}
                         </div>
 
@@ -90,7 +90,7 @@ class Projects extends Component {
                                     alt="Application mobile basée sur le modèle de Snapchat."
                                     />
                             <h5>Realisé avec:<p>React_Native</p> </h5>
-                            <a href='https://github.com/danielamoudokpo/my_snapchat'><button className='btn btn-primary'> Lien GitHub </button></a>
+                            <a href='https://github.com/danielamoudokpo/my_snapchat' target="_top"><button className='btn btn-primary'> Lien GitHub </button></a>
                         </div>
 
                         <div class="col-lg-3 col-md-6 col-sm-8" style={{height:'500px', width:'500'}}>
@@ -104,7 +104,7 @@ class Projects extends Component {
                                     alt="Création d'un site web basé sur le modèle de Leboncoin."
                                     />
                             <h5>Realisé avec: <p>Laravel</p></h5>
-                            <a href='https://github.com/danielamoudokpo/MVC_Free_Ads'><button className='btn btn-primary'> Lien GitHub </button></a>
+                            <a href='https://github.com/danielamoudokpo/MVC_Free_Ads' target="_top"><button className='btn btn-primary'> Lien GitHub </button></a>
                             {/* </div> */}
                         </div>
 
@@ -118,7 +118,7 @@ class Projects extends Component {
                                     alt="Création d'un site pour des Quiz."
                                     />
                             <h5>Realisé avec:<p>Symfony</p> </h5>
-                            <a href='https://github.com/danielamoudokpo/MVC_My_Quiz'><button className='btn btn-primary'> Lien GitHub </button></a>
+                            <a href='https://github.com/danielamoudokpo/MVC_My_Quiz' target="_top"><button className='btn btn-primary'> Lien GitHub </button></a>
                             {/* </div> */}
                         </div>
                         

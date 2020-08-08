@@ -38,15 +38,7 @@ class Contact extends Component{
                                    
                                 </div>
 
-                                <div className='col-1 pr-0 mt-4'>
-                                    <i className="fa fa-map-maker" arial-hidden='true'></i>
-                                </div>
-                                <div className='col-11 mt-4'>
-                                    <h5>Adrress</h5>
-                                    <p> 186, Rue Edouard Tremblay</p>
-                                    <p> 94400 , Vitry-sur-Seine, France</p>
-                                   
-                                </div>
+                                
                             </div>
                         </div>
 

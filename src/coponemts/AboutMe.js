@@ -43,11 +43,9 @@ class AboutMe extends Component {
                                         {/* <hr/> */}
                                         <li> Telephone: +33 7 66 52 11 65</li>
                                         {/* <hr/> */}
-                                        <li> Date de Naissance: 27 Octobre 1999</li>
+                                        <li> Date de Naissance: 27 octobre 1999</li>
                                         {/* <hr/> */}
-                                        <li> Address : 186 Rue Edouard Tremblay,94400,Vitry-sur-Seine,France. </li>
-                                        {/* <hr/> */}
-                                        <li> Nationalité : Togolaise</li>
+
                                     </ul>
                                 </div>
                                         <hr/>
@@ -63,10 +61,10 @@ class AboutMe extends Component {
                                     <hr/>
                                     
                                     <h3 className='py-2 heading1'>
-                                            Educations
+                                            Cursus Scolaire
                                         </h3>
                                     <ul  className='colo'>
-                                    <p> Paris(12) 2018 - 2019 Supinfo International Campus WEB Developer</p>
+                                    <p> Paris(12) 2018 - 2019 Supinfo International Campus - Bac +1.</p>
                                         <p> New-York(10232)2017- 2018: New World High School- Baccalauréat .</p>  
                                       </ul>
 
