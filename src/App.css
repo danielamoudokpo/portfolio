@@ -7,6 +7,9 @@
   background: url(./assets/blog.jpg);
   /* background: rgba(0, 0, 0, 0.5); */
 }
+.agile_banner_info h5 {
+  font-size: 28px;
+}
 .agile_banner_info h2 {
   font-size: 73px;
   letter-spacing: 1px;
@@ -15,19 +18,32 @@
   font-size: 40px;
 }
 .agile_banner_info p {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .agile_banner_margin {
   padding: 12em 0em 0em;
 }
+
+.image_margin{
+  padding-top: 20px;
+  width: 80px; 
+  height: 100px;
+}
+.lk{
+  border-radius: 10%;
+  border-top-right-radius: 30%;
+  padding-left: 20px;
+
+}
+
+
 .landing-section {
   min-height: 765px;
   /* height: 100vh; */
   /* background-color: skyblue; */
 }
-
-
+    /* ////  LANDING-PAGE -END/// */
 
 .projects-section {
   /* height: 100vh; */
@@ -44,19 +60,35 @@
   margin-top: 100;
 }
 
-.contact-section {
-  /* height: 100vh; */
-  min-height: 765px;
-
-  background-color: silver;
-}
+  /* //////HOBBY-START///// */
 
 .hobby-section {
   /* height: 100vh; */
   min-height: 765px;
 
-  background-color: yellowgreen;
+  /* background-color: #fff; */
+
+  /* background-color: silver; */
+  /* background: url(./assets/b.jpg)no-repeat; */
+
 }
+.blog {
+  background: url(./assets/z.jpg) no-repeat 0px 0px;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-attachment: fixed;
+
+
+}
+/* img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+} */
+
+  /* //////HOBBY-END///// */
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -240,6 +272,16 @@ h3.heading1 {
 
 
 /*--  contact --*/
+
+
+.contact-section {
+  /* height: 100vh; */
+  min-height: 765px;
+  /* background-color: #fff; */
+
+  background-color: silver;
+}
+
 .contact-grids {
   margin-top: 5em;
 }
@@ -325,6 +367,17 @@ label {
   display: inline-block;
   border-radius: 35px;
 }
+.test{
+  background-color:red;
+}
 
+.do{
+  /* background-color:white; */
+  display: flex;
 
-
+}
+@media (max-width: 991px){
+.about-grids, .service-grids, .exp-grids, .blog-grids, .project-grids, .clients, .contact-grids {
+    margin-top: 3em;
+}
+}

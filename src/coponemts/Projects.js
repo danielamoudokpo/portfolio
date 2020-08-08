@@ -2,9 +2,28 @@
 import React, { Component ,useState , useEffect} from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter,Card, CardLink, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle } from 'reactstrap';
+
+import ModalImage from "react-modal-image";
+
+
 import laravelLogo from "../assets/laravel.jpeg";
 import reactLogo from "../assets/react.png";
 import symfonyLogo from "../assets/symfony.png";
+import snp from '../assets/snp.jpg';
+import cht from '../assets/chatt.jpeg';
+import es from '../assets/e-s.png';
+import ec from '../assets/ec.jpg'
+import sh from '../assets/sh.png'
+import qz from '../assets/qz.jpg'
+import qz1 from '../assets/qz1.png'
+import qz3 from '../assets/qz3.png'
+
+import ad from '../assets/ad.png'
+import ad2 from '../assets/ads2.png'
+
+import sp from '../assets/sp.png'
+
+
 
 // import myCard from '../coponemts/json/cards'
     
@@ -39,192 +58,222 @@ class Projects extends Component {
         }
     }
 
-
-    toggle = (index) =>{
-
-        console.log(index);
-        // setReqIndex(index);
-        this.setState({reqIndex : index});
-
-        this.setState({modalInfo:reactModal[index]})
-
-        console.log(this.state.modalInfo);
-        // setModal(!modal);   
-        this.setState({modal:true})
-
-    }
-
-    // componentWillReceiveProps(){
-    //     this.setModalInfo);
-    // }
-
-    componentDidMount(){
-        this.setState({modalInfo: reactModal[0]})
-
-        console.log(this.state.modalInfo);
-
-    }
-
-    saveModalDetails(item) {
-
-        console.log(item);
-        // const requiredItem = this.state.requiredItem;
-        // let tempbrochure = this.state.brochure;
-        // tempbrochure[requiredItem] = item;
-        // this.setState({ brochure: tempbrochure });
-      }
-
-
-    componentWillReceiveProps(nextProps) {
-        this.setState({
-            mHead: nextProps.mHead,
-            mBody: nextProps.mBody,
-        });
-    }
-
-   
-
-    renderModal = ()=> {
-
-        // var ModalInfod  = {modalInfo}
-        // console.log({ModalInfod });
-        return(
-                <Modal isOpen={this.state.modal} toggle={this.toggle}   className={this.state.className}>
-                    <ModalHeader toggle={this.toggle}>{this.state.modalInfo.mHeader} </ModalHeader>
-                    {/* <ModalHeader toggle={toggle}> test </ModalHeader> */}
-                    <ModalBody> {this.state.modalInfo.mBody} </ModalBody>
-                    {/* <ModalBody> toi </ModalBody> */}
-                    <ModalFooter>
-                    <Button color="primary" onClick={this.toggle}>Do Something</Button>{''}
-                    <Button color="secondary" onClick={this.toggle}>Cancel</Button>
-                    </ModalFooter>
-                </Modal>     
-        )
-    }
-    
-    renderReactCard = (reactCard, index) => {
-        // console.log({modalInfo});
-    
-        return(
-            <div className='col-md-6'>
-                <Card style= {{width: '18rem'}} key={index} onClick={()=>this.toggle(index)}>
-                    <CardImg top width="100%" src={reactLogo} alt="Card image cap" />
-                    <CardBody>
-                    <CardTitle> {reactCard.title} </CardTitle>
-                    <CardSubtitle>Card subtitle</CardSubtitle>
-                    <CardText> {reactCard.text} </CardText>
-                    <Button>Button</Button>
-                    <CardLink href="#">Another Link</CardLink>
-                    </CardBody>
-                </Card>
-            </div>
-        )
-    
-    }
-    
-    renderLaravelCard = (laravelCard, index) => {
-        return(
-            <div className='col-md-6'>
-                <Card style= {{width: '18rem'}} key={index} onClick={()=>this.toggle(index)}>
-                    <CardImg top width="100%" src={laravelLogo} alt="Card image cap" />
-                    <CardBody>
-                    <CardTitle> {laravelCard.title} </CardTitle>
-                    <CardSubtitle>Card subtitle</CardSubtitle>
-                    <CardText> {laravelCard.text} </CardText>
-                    <Button>Button</Button>
-                    <CardLink href="#">Another Link</CardLink>
-                    </CardBody>
-                </Card>
-            </div>
-        )
-    
-    }
-    
-    renderSymfonyCard = (symfonyCard, index) => {
-        return(
-            <div className='col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12'>
-                <Card style= {{width: '18rem' ,height:'350px'}} key={index} onClick={()=>this.toggle(index)}>
-                    <CardBody>
-                    <CardTitle> {symfonyCard.title} </CardTitle>
-                    <CardSubtitle>Card subtitle</CardSubtitle>
-                    <CardText> {symfonyCard.text} </CardText>
-                    <Button>Button</Button>
-                    <CardLink href="#">Another Link</CardLink>
-                    </CardBody>
-                </Card>
-            </div>
-        )
-    
-    }
-
-
     render(){
-
         return(
-            <div>
-                    {/* { console.log()} */}
-                <section className="projects-section py-5 " id={'Projects-Section'} style={{ }}>
-                        <h3 className='heading text-white '>
-                            Projects
-                        </h3>
-                        <nav>
-                            <div className="nav nav-tabs" id="nav-tab" role="tablist">
-                                <a className="nav-item nav-link active " id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">REACT</a>
-                                <a className="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">LARAVEL</a>
-                                <a className="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">SYMFONY</a>
-                            </div>
-                        </nav>
-                    <div style ={{textAlign:'center'}} className="tab-content" id="nav-tabContent">
+            
+            <section className="projects-section py-5 " id={'Projects-Section'} style={{ }}>
+            
+                <div class="container py-3 text-white ">
+                    <h3 class="heading text-white py-2 ">Mes Projets</h3>
 
-                                                    {/* ----------------REACT ----------------*/}  
+                    <div class=" row exp-grids d-flex column_vignettes">
+                        
+                        <div class="col-lg-3 col-md-6 col-sm-8" >
+                        {/* <div class="row exp-grid1 mt-5"> */}
 
-                        <div className=" tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                            <div className='row'>
-                                {reactCard.map(this.renderReactCard)}
-                            </div>
+                            <h5 class="text-center mt-3" style={{ fontWeight: 'bold'}}> E-Commerce</h5>
+                            <ModalImage 
+                                        small={ec}
+                                        large={es}
+                                        alt="Service de mise en relation pour louer des studios d'enregistrement."
+                                        />
+                                <h5> Realisé avec: <p>React_Laravel</p> </h5>
+                                <a href='https://gitlab.com/e-studio1'><button className='btn btn-primary'> Lien GitHub </button></a>
+                            {/* </div> */}
                         </div>
-                                                {/* ----------------LARAVELL ----------------*/}  
 
-                        <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                            <div className='row'>
-                                {laravelCard.map(this.renderLaravelCard)}
-                            </div>
+                        <div class=" col-lg-3 col-md-6 col-sm-8">
+                            <h5 class="text-center mt-3" style={{ fontWeight: 'bold'}}>My Snapchat</h5>
+                        <ModalImage 
+                                    small={snp}
+                                    large={sp}
+                                    alt="Application mobile basée sur le modèle de Snapchat."
+                                    />
+                            <h5>Realisé avec:<p>React_Native</p> </h5>
+                            <a href='https://github.com/danielamoudokpo/my_snapchat'><button className='btn btn-primary'> Lien GitHub </button></a>
                         </div>
-                                                            {/* ----------------SYMFONY ----------------*/}  
 
-                        <div className=" tab-pane fade " id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" >  
-                            <div className="row">
-                                {symfonyCard.map(this.renderSymfonyCard)}
-                            </div> 
+                        <div class="col-lg-3 col-md-6 col-sm-8" style={{height:'500px', width:'500'}}>
+                        {/* <div class="row exp-grid1 mt-5 "> */}
+
+                            <h5 class=" text-center mt-3" style={{ fontWeight: 'bold'}}> Free Ads</h5>
+
+                            <ModalImage 
+                                    small={sh}
+                                    large={ad}
+                                    alt="Création d'un site web basé sur le modèle de Leboncoin."
+                                    />
+                            <h5>Realisé avec: <p>Laravel</p></h5>
+                            <a href='https://github.com/danielamoudokpo/MVC_Free_Ads'><button className='btn btn-primary'> Lien GitHub </button></a>
+                            {/* </div> */}
                         </div>
-                                                        {/* ----------------END OF TAB CCONTENT ----------------*/} 
 
-                        {/* <Modal isOpen={modal} toggle={toggle} className={className}>
-                            <ModalHeader toggle={toggle}>hello</ModalHeader>
-                            <ModalBody>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </ModalBody>
-                            <ModalFooter>
-                            <Button color="primary" onClick={toggle}>Do Something</Button>{''}
-                            <Button color="secondary" onClick={toggle}>Cancel</Button>
-                            </ModalFooter>
-                        </Modal> */}
-                        <div>
-                            {/* {this.state.modalInfo.map((this.renderModal))} */}
-                            {this.renderModal(this.state.modalInfo)} 
-                            {/* {console.log(this.state.modalInfo)} */}
-                            {/* {this.renderModal()} */}
+                        <div class="col-lg-3 col-md-6 col-sm-8" >
+                            <h5 class="text-center mt-3" style={{ fontWeight: 'bold'}}> My Quiz</h5>
+                            {/* <div class="row exp-grid1 mt-5"> */}
 
+                            <ModalImage 
+                                    small={qz}
+                                    large={qz1}
+                                    alt="Création d'un site pour des Quiz."
+                                    />
+                            <h5>Realisé avec:<p>Symfony</p> </h5>
+                            <a href='https://github.com/danielamoudokpo/MVC_My_Quiz'><button className='btn btn-primary'> Lien GitHub </button></a>
+                            {/* </div> */}
                         </div>
                         
                     </div>
-                </section>
-            </div>
 
+
+                    {/* <div class="row exp-grids">
+                        <div class="col-md-3 exp">
+                            <h4>E-Studio</h4>
+                            <ModalImage 
+                                    small={ec}
+                                    large={es}
+                                    alt="Hello World!"
+                                    />
+                            <h5> Crée avec: React_Laravel</h5>
+                            <a href='https://gitlab.com/e-studio1'><button className='btn btn-primary'> Lien GitHub </button></a>
+
+                        </div>
+                        <div style={{fontSize:'170%',fontWeight:'450',paddingTop:'70px'}}class="col-md-9 mt-md-0 mt-4">
+                            <p>Service de mise en relation pour louer des studios d'enregistrement</p>
+                        </div>
+                    </div>
+                    <div class="row exp-grid1 mt-5">
+                        <div style={{fontSize:'170%',fontWeight:'450',paddingTop:'70px'}} class="col-md-9 mb-md-0 mb-4">
+                            <p>Application mobile basée sur le modèle de Snapchat.</p>
+
+                        </div>
+                        <div class="col-md-3 exp1">
+                            <h4>My_Snapchat</h4>
+                            <ModalImage 
+                                    small={snp}
+                                    large={sp}
+                                    alt="Hello World!"
+                                    />
+                            <h5>Crée avec: React Native</h5>
+                            <a href='https://github.com/danielamoudokpo/my_snapchat'><button className='btn btn-primary'> Lien GitHub </button></a>
+                        </div>
+                    </div>
+                    <div class="row exp-grids mt-5">
+                        <div class="col-md-3 exp">
+                            <h4>Free_Ads</h4>
+                            <ModalImage 
+                                    small={sh}
+                                    large={ad}
+                                    alt="Hello World!"
+                                    />
+                            <h5>Crée avec: Laravel</h5>
+                            <a href='https://github.com/danielamoudokpo/MVC_Free_Ads'><button className='btn btn-primary'> Lien GitHub </button></a>
+                        </div>
+                        <div style={{fontSize:'170%',fontWeight:'450',paddingTop:'70px'}} class="col-md-9 mt-md-0 mt-4">
+                            <p>Création d'un site web basé sur le modèle de Leboncoin</p>
+                        </div>
+                    </div>
+                    <div class="row exp-grid1 mt-5">
+                        <div style={{fontSize:'170%',fontWeight:'450',paddingTop:'70px'}}class="col-md-9 mb-md-0 mb-4 ">
+                            <p> Création d'un site pour des Quiz</p>
+                        </div>
+                        <div class="col-md-3 exp1">
+                            <h4>My_Quiz</h4>
+                            <ModalImage 
+                                    small={qz}
+                                    large={qz1}
+                                    alt="Hello World!"
+                                    />
+                            <h5>Crée avec: Symfony</h5>
+                            <a href='https://github.com/danielamoudokpo/MVC_My_Quiz'><button className='btn btn-primary'> Lien GitHub </button></a>
+                        </div>
+                    </div> */}
+                </div>
+
+                {/* <div className='row '>
+                    <div className='container-fluid py-5 do '>
+                        <div className ='   col-md-f4'>
+                                <ModalImage 
+                                    small={snp}
+                                    large={es}
+                                    alt="Hello World!"
+                                    />
+                        </div>
+                        <div className ='  col-md-f4 text-white'>
+                                <h3>snap chat</h3>
+                                <p>this is ...</p>
+                        </div>
+                        <div className =' col-md-f4'>
+                                <ModalImage 
+                                    small={snp}
+                                    large={es}
+                                    alt="Hello World!"
+                                    />
+                        </div>
+                        <div className =' col-md-f4 text-white'>
+                                <h3>snap chat</h3>
+                                <p>this is ...</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div className='row'>
+                    <div className='container-fluid py-5  '>
+                        <div className =' col-md-4'>
+                                <ModalImage 
+                                    small={snp}
+                                    large={es}
+                                    alt="Hello World!"
+                                    />
+                        </div>
+                        <div className =' col-md-4 text-white'>
+                                <h3>snap chat</h3>
+                                <p>this is ...</p>
+                        </div>
+                    </div>
+                    
+                </div> */}
+                
+                
+                
+                
+            </section>
+
+            
         )
     }
+    
 
-}
+    // const closeLightbox = () => {
+    //     this.state.open = true;
+    //   };
+       
+    //   // ...
+       
+    //   {
+    //     this.state.open && (
+    //       <Lightbox
+    //         medium={urlToLargeImageFile}
+    //         large={urlToHugeImageFile}
+    //         alt="Hello World!"
+    //         onClose={this.closeLightbox}
+    //       />
+    //     );
+    //   }
+
+
+
+   
+
+}   
+
+    
+   
+    
+
+
+
+  
 
 export default Projects;
 
@@ -236,15 +285,17 @@ export default Projects;
 const reactCard =[
 
     { 
-    image : {reactLogo},
+    image : snp,
     title:'my_snapchat',
     text:'too nice',
+    gitLink :'https://github.com/danielamoudokpo/my_snapchat'
 },
 
     {
-    image :  {reactLogo},
+    image : cht,
     title:'my_irc',
     text:'exelente',
+    gitLink : 'https://github.com/danielamoudokpo/my_irc'
 },
 
 ]
@@ -252,15 +303,17 @@ const reactCard =[
 const laravelCard =[
 
     { 
-    image : {laravelLogo},
-    title:'lara1', 
+    image :laravelLogo,
+    title:'FreeAds', 
     text:'nice',
+    gitLink:'https://github.com/danielamoudokpo/MVC_Free_Ads'
 },
 
     { 
-    image : {laravelLogo},
-    title:'lara2', 
-    text:'excelente'
+    image : es,
+    title:'E-Studio', 
+    text:'excelente',
+    gitLink:'https://gitlab.com/e-studio1',
 },
 
 
@@ -269,27 +322,34 @@ const laravelCard =[
 const symfonyCard =[
 
     {
-    image : {symfonyLogo},
-    title:'simf1',
-    text:'good' 
+    image : symfonyLogo,
+    title:'My Quiz',
+    text:'good',
+    gitLink: 'https://github.com/danielamoudokpo/MVC_My_Quiz' 
 },
 
     { 
-    image : {symfonyLogo}, 
+    image : symfonyLogo, 
     title:'simf2', 
-    text:'nice' 
+    text:'nice',
+    gitLink: '#' 
+
 },
 
     { 
-    image : {symfonyLogo},
+    image : symfonyLogo,
     title:'simf3',
-    text:'too goog' 
+    text:'too goog',
+    gitLink: '#' 
+
 },
 
     { 
-    image : {symfonyLogo},
+    image : symfonyLogo,
     title:'simf4',
-    text:'exelent' 
+    text:'exelent',
+    gitLink: '#' 
+
 },
 
 ]
