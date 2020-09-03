@@ -55,7 +55,7 @@ class AboutMe extends Component {
                                             COMPETENCES
                                         </h3>
                                     <ul  className='colo'>
-                                        <p>HTML/CSS | Bootstrap | Php | JavaScript | React | React Native | NodeJS | MySQL | MongoDB | Laravel | Symfony | StripJs</p>
+                                        <p>HTML/CSS | Bootstrap | Php | JavaScript | ReactJS | React Native | NodeJS | MySQL | Laravel | Symfony</p>
                                     </ul>
 
                                     <hr/>

@@ -25,7 +25,7 @@ class Landing extends Component {
                             <h2>Je m'appelle<span> Daniel</span></h2>
                             <h4> Developpeur Web Full Stack,</h4>
                             <h5> C'est plus que du développement, c'est un style de vie.</h5>
-                            <p>Actuellement en recherche d’une alternance professionnelle d’une durée de 12 mois à compter de Septembre 2020 dans le domaine du développement web.</p>
+                            <p>Actuellement en recherche d’une alternance professionnelle d’une durée de 12 mois à compter d'Octobre 2020 dans le domaine du développement web.</p>
                             <a href="#"> Lire plus </a>
                         </div>
                        
