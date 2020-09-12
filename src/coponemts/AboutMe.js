@@ -79,6 +79,9 @@ class AboutMe extends Component {
                                         <p>
                                         Developeur -Integrateur Web, EPITECH-SAMSUNG CAMPUS, Saint-Ouen
                                         </p>
+                                        <p>Juillet 2019- Septembre 2019 : Stagiaire en maintenance des outils informatiques à ENSIATE.</p>
+                                        <p> Mai 2018 - Aout 2018 : Agent chargé de la gestion des stocks et de carburant de la boutique SPEEDWAY à New York.  
+                                        </p>
                                        
                                     </ul>
 
