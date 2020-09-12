@@ -60,7 +60,7 @@ class AboutMe extends Component {
 
                                     <hr/>
                                     
-                                    <h3 className='py-2 heading1'>
+                                    {/* <h3 className='py-2 heading1'>
                                             Cursus Scolaire
                                         </h3>
                                     <ul  className='colo'>
@@ -68,7 +68,7 @@ class AboutMe extends Component {
                                         <p> New-York(10232)2017- 2018: New World High School- Baccalauréat .</p>  
                                       </ul>
 
-                                      <hr/>
+                                      <hr/> */}
 
                                     <h3 className='heading1'>
                                             Formations
@@ -76,12 +76,9 @@ class AboutMe extends Component {
                                         
                                     <ul  className='colo'>
                                       
-                                        <p>
-                                        Developeur -Integrateur Web, EPITECH-SAMSUNG CAMPUS, Saint-Ouen
-                                        </p>
-                                        <p>Juillet 2019- Septembre 2019 : Stagiaire en maintenance des outils informatiques à ENSIATE.</p>
-                                        <p> Mai 2018 - Aout 2018 : Agent chargé de la gestion des stocks et de carburant de la boutique SPEEDWAY à New York.  
-                                        </p>
+                                        <p> Developeur -Integrateur Web, EPITECH-SAMSUNG CAMPUS, Saint-Ouen</p>
+                                        <p> Paris(12) 2018 - 2019 Supinfo International Campus - Bac +1.</p>
+                                        <p> New-York(10232)2017- 2018: New World High School- Baccalauréat .</p>  
                                        
                                     </ul>
 
