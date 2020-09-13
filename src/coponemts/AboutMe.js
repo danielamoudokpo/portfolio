@@ -58,7 +58,7 @@ class AboutMe extends Component {
                                         <p>HTML/CSS | Bootstrap | Php | JavaScript | ReactJS | React Native | NodeJS | MySQL | Laravel | Symfony</p>
                                     </ul>
 
-                                    <hr/>
+                                    {/* <hr/> */}
                                     
                                     {/* <h3 className='py-2 heading1'>
                                             Cursus Scolaire
@@ -68,7 +68,7 @@ class AboutMe extends Component {
                                         <p> New-York(10232)2017- 2018: New World High School- Baccalauréat .</p>  
                                       </ul>
 
-                                      <hr/> */}
+                                    //   <hr/> */}
 
                                     <h3 className='heading1'>
                                             Formations
