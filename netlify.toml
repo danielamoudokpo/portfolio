@@ -1,5 +1,0 @@
-    publish = "."
-
-    CI= "npm run build"
-
-
