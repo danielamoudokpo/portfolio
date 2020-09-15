@@ -1,4 +1,3 @@
-[build]
     publish = "."
 
     CI= "npm run build"
