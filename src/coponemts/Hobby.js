@@ -15,7 +15,6 @@ class Hobby extends Component {
                         <li> Football, ancien joueur de New York Fusion Soccer Club à New York et
                         actuellement joueur à l’Entente Sportif de Vitry-sur-Seine </li>
                         <li> Danse Hip Hop </li>
-                        <li> Restauration </li>
                         <li> Voyage </li>
                     </ul>
 

@@ -60,15 +60,15 @@ class AboutMe extends Component {
 
                                     {/* <hr/> */}
                                     
-                                    {/* <h3 className='py-2 heading1'>
-                                            Cursus Scolaire
+                                    <h3 className='py-2 heading1'>
+                                            {/* Cursus Scolaire */}
                                         </h3>
                                     <ul  className='colo'>
                                     <p> Paris(12) 2018 - 2019 Supinfo International Campus - Bac +1.</p>
                                         <p> New-York(10232)2017- 2018: New World High School- Baccalauréat .</p>  
                                       </ul>
 
-                                    //   <hr/> */}
+                                    //   <hr/>
 
                                     <h3 className='heading1'>
                                             Formations
